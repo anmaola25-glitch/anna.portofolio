@@ -207,3 +207,8 @@ body {
   color: white; /* jangan berubah jadi biru */
 }
 
+.service-link {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+}
