@@ -198,17 +198,3 @@ body {
   padding-top: 90px;
 }
 
-.service-card {
-  display: block;
-  text-decoration: none;
-  color: white; /* biar teks tetep putih */
-}
-.service-card:hover {
-  color: white; /* jangan berubah jadi biru */
-}
-
-.service-link {
-  text-decoration: none;
-  color: inherit;
-  display: block;
-}
