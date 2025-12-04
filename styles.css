@@ -58,10 +58,40 @@ html,body{
 @keyframes float{0%{transform:translateY(0px)}50%{transform:translateY(-8px)}100%{transform:translateY(0px)}}
 
 /* data diri */
-.data-card{padding:0.9rem;border-radius:12px;background:linear-gradient(180deg, rgba(255,255,255,0.015), rgba(255,255,255,0.01));border:1px solid rgba(255,255,255,0.02);color:var(--muted);font-size:0.95rem}
-.data-card h4{margin:0 0 0.6rem 0;color:var(--white);font-size:1rem}
-.data-card ul{list-style:none;padding:0;margin:0}
-.data-card li{margin:0.35rem 0;display:flex;gap:8px}
+.data-card {
+  padding: 1.5rem;                   /* jarak dalam lebih luas */
+  border-radius: 12px;
+  background: linear-gradient(180deg, rgba(255,255,255,0.05), rgba(255,255,255,0.02));
+  border: 1px solid rgba(255,255,255,0.08);
+  color: var(--muted);
+  font-size: 0.95rem;
+
+  /* ini yang bikin turun ke bawah */
+  margin-top: 60px;                 
+  width: 60%;                        /* biar tidak terlalu melebar */
+  backdrop-filter: blur(8px);        /* biar lebih estetik */
+}
+
+/* Judul */
+.data-card h4 {
+  margin: 0 0 0.8rem 0;
+  color: var(--white);
+  font-size: 1.15rem;
+}
+
+/* List */
+.data-card ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.data-card li {
+  margin: 0.45rem 0;
+  display: flex;
+  gap: 10px;
+}
+
 
 /* hero content */
 .hero-card{padding:1rem 1.4rem;border-radius:var(--radius);background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));border:1px solid rgba(255,255,255,0.03);transition:transform .45s var(--ease-smooth),box-shadow .35s}
