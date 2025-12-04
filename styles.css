@@ -57,29 +57,32 @@ html,body{
 .photo-glow{position:absolute;right:-10%;top:-10%;width:220px;height:220px;background:radial-gradient(circle at 30% 30%, rgba(255,107,203,0.14), transparent 40%);filter:blur(18px);pointer-events:none}
 @keyframes float{0%{transform:translateY(0px)}50%{transform:translateY(-8px)}100%{transform:translateY(0px)}}
 
-/* data diri */
+/* DATA DIRI */
 .data-card {
-  padding: 2.5rem;                   /* jarak dalam lebih luas */
-  border-radius: 20px;
-  background: linear-gradient(180deg, rgba(255,255,255,0.05), rgba(255,255,255,0.02));
-  border: 1px solid rgba(255,255,255,0.08);
+  padding: 1.4rem;
+  border-radius: 16px;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  backdrop-filter: blur(10px);
+
   color: var(--muted);
   font-size: 0.95rem;
 
-  /* ini yang bikin turun ke bawah */
-  margin-top: 60px;                 
-  width: 60%;                        /* biar tidak terlalu melebar */
-  backdrop-filter: blur(8px);        /* biar lebih estetik */
+  /* SEUSAIKAN DENGAN FOTO */
+  width: 100%;              /* mengikuti lebar kolom foto */
+  max-width: 320px;         /* batas maksimal supaya tetap estetik */
+  margin: 20px auto 0;      /* jarak 20px dari foto, dan center */
 }
 
 /* Judul */
 .data-card h4 {
-  margin: 0 0 0.8rem 0;
+  margin: 0 0 0.6rem 0;
   color: var(--white);
-  font-size: 1.15rem;
+  font-size: 1.1rem;
+  text-align: center;
 }
 
-/* List */
+/* Isi list */
 .data-card ul {
   list-style: none;
   padding: 0;
@@ -87,10 +90,13 @@ html,body{
 }
 
 .data-card li {
-  margin: 0.45rem 0;
+  margin: 0.4rem 0;
   display: flex;
-  gap: 10px;
+  gap: 6px;
+  font-size: 0.92rem;
+  line-height: 1.35;
 }
+
 
 
 /* hero content */
