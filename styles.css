@@ -274,3 +274,26 @@ body {
   max-width: 1120px;
   margin: 0 auto;
 }
+/* Untuk video agar ukurnnya sama dengan item lain */
+.video-wrapper {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.video-wrapper video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;      /* bikin video proporsional */
+  display: block;
+  border-radius: 12px;
+}
+
+/* Biar grid 3 kolom (opsional, kalau belum ada) */
+.portfolio-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+}
