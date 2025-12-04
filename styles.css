@@ -59,8 +59,8 @@ html,body{
 
 /* data diri */
 .data-card {
-  padding: 1.5rem;                   /* jarak dalam lebih luas */
-  border-radius: 12px;
+  padding: 2.5rem;                   /* jarak dalam lebih luas */
+  border-radius: 20px;
   background: linear-gradient(180deg, rgba(255,255,255,0.05), rgba(255,255,255,0.02));
   border: 1px solid rgba(255,255,255,0.08);
   color: var(--muted);
