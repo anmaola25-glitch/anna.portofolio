@@ -227,8 +227,27 @@ blockquote{background:var(--glass);padding:1rem;border-radius:12px;border:1px so
 body {
   padding-top: 90px;
 }
+/* ======== FIX UNTUK PORTFOLIO MELEBAR ======== */
 
-.portfolio-section {
-  max-width: 1200px;
+/* Pastikan semua section punya max-width */
+.section,
+.portfolio-section,
+#portfolio {
+  max-width: 1120px;
+  margin: 0 auto;
+  padding: 0 1rem; /* biar tidak mepet layar */
+}
+
+/* Fix gambar portfolio terlalu besar */
+.portfolio-item img {
+  width: 100%;
+  height: 260px;
+  object-fit: cover;
+}
+
+/* Biar portfolio grid stabil */
+.portfolio-grid {
+  width: 100%;
+  max-width: 1120px;
   margin: 0 auto;
 }
