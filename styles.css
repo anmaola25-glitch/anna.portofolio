@@ -57,47 +57,64 @@ html,body{
 .photo-glow{position:absolute;right:-10%;top:-10%;width:220px;height:220px;background:radial-gradient(circle at 30% 30%, rgba(255,107,203,0.14), transparent 40%);filter:blur(18px);pointer-events:none}
 @keyframes float{0%{transform:translateY(0px)}50%{transform:translateY(-8px)}100%{transform:translateY(0px)}}
 
+/* ============================
+   PROFILE COLUMN + DATA DIRI FIX
+============================ */
+
+/* Kolom kiri: foto + data diri */
+.profile-column {
+  display: flex;
+  flex-direction: column;
+  align-items: center;   /* BIAR DATA DIRI ADA DI TENGAH BUKAN MELESET KE KIRI */
+  gap: 20px;
+  width: 100%;
+}
+
+/* Foto */
+.profile-photo {
+  width: 320px;
+  height: 380px;
+  border-radius: 18px;
+  overflow: hidden;
+  border: 1px solid rgba(255,255,255,0.06);
+}
+
 /* DATA DIRI */
 .data-card {
-  padding: 1.4rem;
-  border-radius: 16px;
-  background: rgba(255, 255, 255, 0.05);
-  border: 1px solid rgba(255, 255, 255, 0.12);
-  backdrop-filter: blur(10px);
+  width: 320px;               /* SAMA PERSIS DENGAN FOTO BIAR RAPI */
+  padding: 1.6rem;
+  border-radius: 18px;
+
+  background: rgba(255,255,255,0.04);
+  border: 1px solid rgba(255,255,255,0.1);
+  backdrop-filter: blur(12px);
 
   color: var(--muted);
   font-size: 0.95rem;
 
-  /* SEUSAIKAN DENGAN FOTO */
-  width: 100%;              /* mengikuti lebar kolom foto */
-  max-width: 320px;         /* batas maksimal supaya tetap estetik */
-  margin: 20px auto 0;      /* jarak 20px dari foto, dan center */
+  margin: 0 auto;             /* BIAR TEPAT DI TENGAH */
 }
 
 /* Judul */
 .data-card h4 {
-  margin: 0 0 0.6rem 0;
-  color: var(--white);
-  font-size: 1.1rem;
+  margin: 0 0 1rem 0;
+  font-size: 1.2rem;
   text-align: center;
+  color: var(--white);
 }
 
-/* Isi list */
 .data-card ul {
   list-style: none;
-  padding: 0;
   margin: 0;
+  padding: 0;
 }
 
 .data-card li {
-  margin: 0.4rem 0;
+  margin: 8px 0;
   display: flex;
+  justify-content: space-between;
   gap: 6px;
-  font-size: 0.92rem;
-  line-height: 1.35;
 }
-
-
 
 /* hero content */
 .hero-card{padding:1rem 1.4rem;border-radius:var(--radius);background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));border:1px solid rgba(255,255,255,0.03);transition:transform .45s var(--ease-smooth),box-shadow .35s}
